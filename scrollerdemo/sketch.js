@@ -19,8 +19,8 @@ function setup() {
   colorMode(HSB,colorFrameCount);
   createCanvas(640, 480);
   console.log(scrollerLength);
-  minPosition = width - (scrollerLength*letterSize);
-  console.log(minPosition);
+  minPosition = scrollerLength * -letterSize;
+  console.log("Minimum position is " + minPosition);
   fill(255);
   textAlign(CENTER);
   textSize(letterSize);
